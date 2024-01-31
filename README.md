@@ -25,3 +25,13 @@ chmod -x switch.sh
 sh ./Projects/audio-driver-switcher/switch.sh 0
 ```
 *Use the positional argument according to your needs. For me its 0 for Monitor and 1 for Headphones. Both have been assigned to different shortcuts.*
+
+### Note
+We could also just paste in the `pactl` commands directly to the Custom Keyboard Shortcut actions.
+```
+# A keyboard shortcut here
+pactl set-default-sink <driver_name_monitor>
+
+# Another shortcut here
+pactl set-default-sink <driver_name_headphone>
+```
