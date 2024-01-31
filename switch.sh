@@ -1,3 +1,4 @@
+# $1 gets the first positional argument passed to the script
 choice=$1
 
 if [ -z $choice ] || [ $choice -eq 0 ]; then
